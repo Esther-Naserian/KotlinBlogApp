@@ -13,22 +13,21 @@
             android:id="@+id/tvprofile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.019"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.011"
             app:srcCompat="@drawable/user_profile_svgrepo_com" />
 
         <TextView
             android:id="@+id/tvName"
             android:layout_width="181dp"
             android:layout_height="38dp"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="36dp"
             android:text="Naserian"
             android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.411"
             app:layout_constraintStart_toEndOf="@+id/tvprofile"
             app:layout_constraintTop_toTopOf="@+id/tvprofile" />
 
@@ -36,25 +35,68 @@
             android:id="@+id/tvBookName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="156dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="12dp"
             android:text="Born A Crime"
             android:textColor="#E91E63"
             android:textColorLink="#6E3777"
             android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.272"
+            app:layout_constraintStart_toEndOf="@+id/tvprofile"
             app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
+        <ImageView
+            android:id="@+id/tvImage"
+            android:layout_width="440dp"
+            android:layout_height="223dp"
+            android:layout_marginTop="28dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDate"
+            app:srcCompat="@drawable/trevor" />
+
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tvDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="156dp"
-            android:layout_marginTop="40dp"
-            android:text="17th Dec,2005"
-            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:text="17th/December/2005"
+            app:layout_constraintBottom_toTopOf="@+id/tvImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.57"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvBookName" />
+            app:layout_constraintTop_toBottomOf="@+id/tvBookName"
+            app:layout_constraintVertical_bias="0.225" />
+
+        <TextView
+            android:id="@+id/tvPreview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="In Born a Crime, Trevor Noah shares his earnest, wholehearted experiences growing up in South Africa. A series of conflicts on race, culture, and values teach Trevor how to live and adapt to the modern world around him."
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvImage"
+            app:layout_constraintVertical_bias="0.073" />
+
+        <TextView
+            android:id="@+id/tvLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read More"
+            android:textColorLink="#C90C0C"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPreview"
+            app:layout_constraintVertical_bias="0.1" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
